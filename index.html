@@ -1,239 +1,577 @@
-Aishwarya Ramesh
-About
-Skills
-Experience
-Work
-Education
-GitHub
-Get in Touch
-Open to Opportunities
-Aishwarya
-Ramesh
-SEO Analyst & AI Automation Specialist · BankBazaar
-B.Tech CSE graduate specialising in SEO strategy, AI-powered automation, and technical site optimisation. Building smarter workflows with N8N, Claude AI, and data-driven SEO to drive organic growth.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Aishwarya Ramesh — SEO Analyst & AI Automation Specialist</title>
+<meta name="description" content="Portfolio of Aishwarya Ramesh, SEO Analyst & AI Automation Specialist at BankBazaar. Building smarter SEO workflows with N8N, Claude AI, and data-driven optimisation." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg:#0e1014;
+    --bg-2:#13161c;
+    --panel:#1a1d24;
+    --panel-2:#20242c;
+    --line:rgba(255,255,255,0.07);
+    --text:#ece8de;
+    --muted:#8a8579;
+    --accent:#c9a062;        /* muted champagne gold */
+    --accent-soft:rgba(201,160,98,0.12);
+    --accent-line:rgba(201,160,98,0.25);
+    --shadow:0 30px 60px -30px rgba(0,0,0,0.5);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    background:
+      radial-gradient(900px 500px at 80% -10%,rgba(201,160,98,0.05),transparent 60%),
+      var(--bg);
+    color:var(--text);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  a{color:inherit;text-decoration:none}
+  .container{max-width:1140px;margin:0 auto;padding:0 28px}
+  .serif{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;letter-spacing:-0.01em}
 
-View My Work →
-Get in Touch
-2+
-AI Tools Built
-N8N
-Automation Expert
-1Y+
-SEO Experience
-AR
-SEO × AI
-About Me
-Computer Science meets SEO strategy.
-I bring a developer's mindset to search optimisation — combining technical depth with creative problem-solving to make sites faster, smarter, and more visible.
+  /* NAV */
+  header.nav{
+    position:fixed;top:0;left:0;right:0;z-index:50;
+    backdrop-filter:saturate(140%) blur(14px);
+    background:rgba(14,16,20,0.75);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:70px}
+  .brand{
+    font-family:'Cormorant Garamond',serif;font-weight:700;font-size:1.4rem;
+    color:var(--accent);
+    letter-spacing:0.02em
+  }
+  nav ul{display:flex;gap:28px;list-style:none}
+  nav a{font-size:.92rem;color:var(--muted);transition:color .2s}
+  nav a:hover{color:var(--accent)}
+  .nav-cta{
+    display:inline-block;padding:9px 20px;border-radius:999px;font-size:.85rem;font-weight:500;
+    border:1px solid var(--accent-line);color:var(--accent);background:transparent;
+    transition:all .2s
+  }
+  .nav-cta:hover{background:var(--accent-soft);border-color:var(--accent)}
+  .menu-toggle{display:none;background:none;border:0;color:var(--text);font-size:1.4rem;cursor:pointer}
 
-I'm an SEO Analyst at BankBazaar, where I work at the intersection of search optimisation and engineering. My day-to-day is a mix of keyword research, technical audits, and building in-house tools that take repetitive SEO work off my team's plate.
+  /* HERO */
+  .hero{min-height:100vh;display:flex;align-items:center;padding:120px 0 80px;position:relative}
+  .hero-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:60px;align-items:center;width:100%}
+  .pill{
+    display:inline-flex;align-items:center;gap:8px;padding:7px 16px;
+    border-radius:999px;font-size:.76rem;letter-spacing:.2em;text-transform:uppercase;font-weight:500;
+    margin-bottom:32px;
+    border:1px solid var(--accent-line);
+    color:var(--accent)
+  }
+  .pill .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 0 rgba(201,160,98,.5);animation:pulse 2.4s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(201,160,98,.5)}70%{box-shadow:0 0 0 10px rgba(201,160,98,0)}100%{box-shadow:0 0 0 0 rgba(201,160,98,0)}}
+  .hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,7vw,5.6rem);line-height:1.02;font-weight:600;margin-bottom:18px}
+  .hero h1 .accent{color:var(--accent);font-style:italic}
+  .hero .role{font-family:'Cormorant Garamond',serif;font-size:clamp(1.2rem,2vw,1.7rem);color:#c8c4b8;font-weight:400;margin-bottom:28px}
+  .hero p.lead{max-width:560px;color:var(--muted);font-size:1.05rem;margin-bottom:40px}
+  .cta-row{display:flex;flex-wrap:wrap;gap:16px;margin-bottom:56px}
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:13px 26px;border-radius:999px;font-weight:500;font-size:.94rem;transition:all .25s;cursor:pointer;border:1px solid transparent}
+  .btn-primary{background:var(--accent);color:#0e1014}
+  .btn-primary:hover{background:#d6b074;transform:translateY(-2px)}
+  .btn-ghost{border-color:rgba(255,255,255,0.15);color:var(--text)}
+  .btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
 
-What I care about most is building things that scale. Whether it's an N8N workflow that handles backlink disavow processing, or a Claude AI–powered tool for content operations, I'm always looking for the leverage point where automation can replace busywork.
+  /* PROFILE IMAGE */
+  .profile-wrap{
+    position:relative;display:flex;align-items:center;justify-content:center;
+    perspective:800px
+  }
+  .profile-ring{
+    position:absolute;inset:-12px;border-radius:24px;
+    border:1px solid var(--accent-line);
+    z-index:0;
+  }
+  .profile{
+    position:relative;z-index:1;width:340px;height:440px;border-radius:18px;
+    background:var(--panel);
+    border:1px solid var(--line);
+    overflow:hidden;
+    box-shadow:0 30px 80px -30px rgba(0,0,0,0.6);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .profile img{width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block}
+  .profile .placeholder{
+    font-family:'Cormorant Garamond',serif;font-size:7rem;font-weight:600;
+    color:var(--accent);
+  }
+  .profile-badge{
+    position:absolute;bottom:18px;left:50%;transform:translateX(-50%);z-index:2;
+    background:rgba(14,16,20,0.85);backdrop-filter:blur(8px);
+    border:1px solid var(--accent-line);color:var(--accent);
+    padding:8px 18px;border-radius:999px;font-size:.72rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;white-space:nowrap;
+  }
 
-I graduated B.Tech in Computer Science from JNTUA in 2024, and I'm based in Bangalore. Outside of work, I'm a trained classical dancer — discipline that translates surprisingly well to the patience SEO requires.
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:760px}
+  .stat{padding:22px 24px;border:1px solid var(--line);border-radius:16px;transition:all .3s}
+  .stat:hover{border-color:var(--accent-line)}
+  .stat .num{
+    font-family:'Cormorant Garamond',serif;font-size:2.5rem;font-weight:600;line-height:1;
+    color:var(--accent);
+  }
+  .stat .label{margin-top:6px;font-size:.7rem;color:var(--muted);letter-spacing:.2em;text-transform:uppercase}
 
-Quick Facts
-Location
-Bangalore, Karnataka
-Role
-SEO Analyst
-Company
-BankBazaar
-Education
-B.Tech CSE, JNTUA
-Languages
-English, Telugu, Kannada
-Status
-Open to Opportunities
-Skills & Expertise
-What I bring to the table.
-A toolkit built across four years of computer science training and hands-on SEO work — from Python full-stack to crawl budget optimisation.
+  /* SECTIONS */
+  section{padding:110px 0;position:relative}
+  .section-head{margin-bottom:60px;max-width:760px}
+  .eyebrow{font-size:.76rem;letter-spacing:.24em;text-transform:uppercase;font-weight:500;margin-bottom:14px;color:var(--accent)}
+  .section-head h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,4vw,3.4rem);line-height:1.1;font-weight:600;margin-bottom:18px}
+  .section-head h2 em{color:var(--accent);font-style:italic}
+  .section-head p{color:var(--muted);font-size:1.05rem}
 
-⚡
-SEO Expertise
-On-page, off-page, and technical SEO — with a focus on getting search engines to understand sites better.
+  /* ABOUT */
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+  .about-text p{color:#c8c4b8;margin-bottom:18px;font-size:1.02rem}
+  .about-text p:last-child{margin-bottom:0}
+  .about-text strong{color:var(--accent);font-weight:500}
+  .about-card{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:36px;box-shadow:var(--shadow)}
+  .about-card h3{font-family:'Cormorant Garamond',serif;font-size:1.5rem;margin-bottom:24px;color:var(--accent)}
+  .info-row{display:flex;justify-content:space-between;padding:14px 0;border-bottom:1px solid var(--line);font-size:.94rem}
+  .info-row:last-child{border-bottom:0}
+  .info-row .k{color:var(--muted)}
+  .info-row .v{color:var(--text);font-weight:500;text-align:right}
+  .info-row .v.hot{color:var(--accent)}
 
-On-Page SEO
-Off-Page SEO
-Keyword Research
-Content Optimisation
-Link Building
-Crawl Budget
-Technical Audits
-Schema Markup
-🤖
-AI & Automation
-Replacing manual SEO ops with workflows and tools that compound time savings.
+  /* SKILLS */
+  .skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+  .skill-card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:32px;transition:all .3s}
+  .skill-card:hover{border-color:var(--accent-line);transform:translateY(-3px)}
+  .skill-card .icon{width:46px;height:46px;display:flex;align-items:center;justify-content:center;border-radius:12px;background:var(--accent-soft);color:var(--accent);margin-bottom:18px;font-size:1.3rem;border:1px solid var(--accent-line)}
+  .skill-card h3{font-family:'Cormorant Garamond',serif;font-size:1.45rem;margin-bottom:14px}
+  .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .tag{font-size:.78rem;padding:5px 12px;border-radius:999px;background:rgba(255,255,255,0.03);border:1px solid var(--line);color:#c8c4b8;font-weight:400}
 
-Claude AI Integration
-N8N Workflows
-AI-Assisted Content Ops
-Internal Tool Dev
-Workflow Automation
-💻
-Technical
-A computer science foundation that lets me read, write, and ship the code behind SEO tools.
+  /* EXPERIENCE */
+  .timeline{position:relative;padding-left:32px;border-left:1px solid var(--line)}
+  .tl-item{position:relative;padding-bottom:42px}
+  .tl-item:last-child{padding-bottom:0}
+  .tl-item::before{content:"";position:absolute;left:-37px;top:8px;width:11px;height:11px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(201,160,98,0.12)}
+  .tl-card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:32px}
+  .tl-card .when{font-size:.76rem;letter-spacing:.2em;text-transform:uppercase;font-weight:500;margin-bottom:8px;color:var(--accent)}
+  .tl-card h3{font-family:'Cormorant Garamond',serif;font-size:1.5rem;margin-bottom:6px}
+  .tl-card .company{color:var(--muted);font-size:.96rem;margin-bottom:18px}
+  .tl-card ul{list-style:none;padding:0}
+  .tl-card li{position:relative;padding-left:22px;margin-bottom:10px;color:#c8c4b8;font-size:.95rem}
+  .tl-card li::before{content:"";position:absolute;left:0;top:11px;width:8px;height:1px;background:var(--accent)}
 
-Python
-Python Full-Stack
-HTML
-Vulnerability Testing
-Machine Learning
-📊
-Tools & Analytics
-The platforms I use daily to track, audit, and act on search performance.
+  /* PROJECTS */
+  .projects-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+  .project{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:32px;transition:all .3s}
+  .project:hover{border-color:var(--accent-line);transform:translateY(-3px)}
+  .project .pkind{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;font-weight:500;margin-bottom:12px;color:var(--accent)}
+  .project h3{font-family:'Cormorant Garamond',serif;font-size:1.45rem;margin-bottom:14px;line-height:1.2}
+  .project p{color:#c8c4b8;font-size:.95rem;margin-bottom:18px}
+  .project .meta{display:flex;flex-wrap:wrap;gap:8px}
 
-Google Analytics
-Search Console
-SEMrush
-Ahrefs
-Nessus
-Wireshark
-Work Experience
-Where I've built things.
-Driving organic growth and operational efficiency through SEO and AI-led automation.
+  /* EDUCATION */
+  .edu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .edu-card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:28px;transition:all .3s}
+  .edu-card:hover{border-color:var(--accent-line)}
+  .edu-card .year{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:600;color:var(--accent)}
+  .edu-card h4{font-size:1.02rem;margin:8px 0 6px;font-weight:600}
+  .edu-card .school{color:var(--muted);font-size:.86rem;margin-bottom:14px}
+  .edu-card .grade{display:inline-block;padding:4px 12px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:.76rem;font-weight:500;border:1px solid var(--accent-line)}
 
-Mar 2025 — Present
-SEO Analyst
-BankBazaar · Bangalore
-Conduct keyword research, competitor analysis, and on-page optimisation to improve organic rankings.
-Developed in-house tools to streamline SEO reporting and cut analysis time significantly.
-Built an N8N automation workflow for backlink disavow processing — reducing manual effort dramatically.
-Created 2 internal automation tools leveraging Claude AI to assist with content and SEO operations.
-Collaborated with content and dev teams to implement SEO-friendly site structures.
-Monitored analytics via Google Analytics & Search Console to track KPIs and improve traffic.
-Improved site visibility through technical SEO — HTML optimisation, schema markup, and site audits.
-Worked on crawl budget optimisation — disabling unnecessary URLs and pruning excess pages to sharpen Google's understanding of the site.
-Actively learning and implementing AI-powered automation tools to push SEO operations further.
-Internship
-Python Full-Stack Intern
-Brain O Vision
-Hands-on training in Python full-stack development, building end-to-end web applications.
-Strengthened practical skills across backend logic, database integration, and front-end implementation.
-My Work
-Selected projects.
-A mix of professional automation builds and academic projects that shaped how I think about technical problems.
+  /* ACHIEVEMENTS */
+  .ach-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+  .ach{display:flex;gap:16px;padding:22px;border:1px solid var(--line);border-radius:14px;background:var(--panel);transition:all .3s}
+  .ach:hover{border-color:var(--accent-line)}
+  .ach .ico{flex-shrink:0;width:42px;height:42px;display:flex;align-items:center;justify-content:center;border-radius:10px;background:var(--accent-soft);color:var(--accent);font-size:1.1rem;border:1px solid var(--accent-line)}
+  .ach h4{font-size:1rem;margin-bottom:4px}
+  .ach p{color:var(--muted);font-size:.85rem}
 
-Automation · Professional
-N8N Backlink Disavow Workflow
-Designed and built an end-to-end automation pipeline that handles backlink disavow processing — turning a multi-hour manual task into a hands-off workflow. Substantially reduced effort and turnaround time for the SEO team.
+  /* CONTACT */
+  .contact-card{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:60px;text-align:center;box-shadow:var(--shadow);position:relative;overflow:hidden}
+  .contact-card::before{content:"";position:absolute;inset:0;background:radial-gradient(500px 250px at 50% 0%,rgba(201,160,98,0.05),transparent);pointer-events:none}
+  .contact-card h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,2.8rem);margin-bottom:14px;position:relative}
+  .contact-card h2 em{color:var(--accent);font-style:italic}
+  .contact-card p{color:var(--muted);max-width:520px;margin:0 auto 36px;position:relative}
+  .contact-row{display:flex;flex-wrap:wrap;justify-content:center;gap:18px;position:relative}
 
-N8N
-Workflow Automation
-SEO Ops
-AI Tooling · Professional
-Claude AI Internal Tools
-Built two internal automation tools leveraging Claude AI to assist with content operations and SEO tasks — embedding AI assistance directly into the team's daily workflow to compound time savings.
+  /* FOOTER */
+  footer{padding:40px 0;text-align:center;border-top:1px solid var(--line);color:var(--muted);font-size:.86rem}
+  footer .accent{color:var(--accent);font-weight:500}
 
-Claude AI
-Internal Tools
-Content Ops
-Machine Learning · Academic
-Customer Segmentation with Unsupervised ML
-End-to-end clustering pipeline using Mini-Batch K-Means. Cleaned and feature-engineered customer data, then segmented users into actionable groups like high-value shoppers and bargain hunters — improving marketing efficiency and inventory targeting.
+  /* MOBILE */
+  @media (max-width:980px){
+    .hero-grid{grid-template-columns:1fr;gap:40px;text-align:left}
+    .profile{width:280px;height:360px}
+    .profile-wrap{justify-content:flex-start}
+  }
+  @media (max-width:820px){
+    nav ul{display:none}
+    .menu-toggle{display:block}
+    nav.open ul{display:flex;position:absolute;top:70px;left:0;right:0;background:var(--bg-2);flex-direction:column;padding:18px 28px;gap:18px;border-bottom:1px solid var(--line)}
+    .about-grid{grid-template-columns:1fr;gap:36px}
+    .skills-grid,.projects-grid,.edu-grid,.ach-grid{grid-template-columns:1fr}
+    .stats{grid-template-columns:1fr}
+    .contact-card{padding:40px 24px}
+    section{padding:80px 0}
+    .profile{width:240px;height:320px}
+    .profile .placeholder{font-size:5.5rem}
+  }
 
-Python
-K-Means
-Unsupervised ML
-Data Cleaning
-Cybersecurity · Internship
-Cyber Security Associate Project
-Audited systems for vulnerabilities, applied hardening rules, remediated issues, and ran online-safety training. Improved system safety by 30% and delivered a faster security plan with added protective layers.
+  /* reveal */
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}
+  .reveal.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
 
-Nessus
-Wireshark
-Vulnerability Testing
-Hardening
-SEO Analysis · Python
-Duplicate & Thin Content Detector
-Desktop analysis tool that compares page text with TF-IDF and cosine similarity, flags thin content, and exports explainable Excel reports with transparent recommendations.
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="#top" class="brand">Aishwarya Ramesh</a>
+    <nav id="primary-nav">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#github">GitHub</a></li>
+        <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" aria-label="Toggle menu" onclick="document.getElementById('primary-nav').classList.toggle('open')">☰</button>
+  </div>
+</header>
 
-Python
-TF-IDF
-Excel Reports
-Open Source & Code
-Find me on GitHub.
-Explore project showcases, experiments, and portfolio work on GitHub.
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <span class="pill"><span class="dot"></span> Open to Opportunities</span>
+        <h1>Aishwarya<br/><span class="accent">Ramesh</span></h1>
+        <div class="role">SEO Analyst &amp; AI Automation Specialist · BankBazaar</div>
+        <p class="lead">B.Tech CSE graduate specialising in SEO strategy, AI-powered automation, and technical site optimisation. Building smarter workflows with N8N, Claude AI, and data-driven SEO to drive organic growth.</p>
+        <div class="cta-row">
+          <a href="#projects" class="btn btn-primary">View My Work →</a>
+          <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+        </div>
+        <div class="stats">
+          <div class="stat"><div class="num">2+</div><div class="label">AI Tools Built</div></div>
+          <div class="stat"><div class="num">N8N</div><div class="label">Automation Expert</div></div>
+          <div class="stat"><div class="num">1Y+</div><div class="label">SEO Experience</div></div>
+        </div>
+      </div>
+      <div class="profile-wrap">
+        <div class="profile-ring"></div>
+        <div class="profile">
+          <img src="profile.jpg.jpeg" alt="Aishwarya Ramesh" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+          <div class="placeholder" style="display:none">AR</div>
+        </div>
+        <div class="profile-badge">SEO × AI</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-Automation · N8N
-Backlink Disavow Automation ↗
-Sanitized showcase of an automated backlink review and disavow-file preparation workflow.
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">About Me</div>
+      <h2>Computer Science meets <em>SEO strategy</em>.</h2>
+      <p>I bring a developer's mindset to search optimisation — combining technical depth with creative problem-solving to make sites faster, smarter, and more visible.</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>I'm an SEO Analyst at BankBazaar, where I work at the intersection of search optimisation and engineering. My day-to-day is a mix of keyword research, technical audits, and building in-house tools that take repetitive SEO work off my team's plate.</p>
+        <p>What I care about most is <strong>building things that scale</strong>. Whether it's an N8N workflow that handles backlink disavow processing, or a Claude AI–powered tool for content operations, I'm always looking for the leverage point where automation can replace busywork.</p>
+        <p>I graduated B.Tech in Computer Science from JNTUA in 2024, and I'm based in Bangalore. Outside of work, I'm a trained classical dancer — discipline that translates surprisingly well to the patience SEO requires.</p>
+      </div>
+      <div class="about-card reveal">
+        <h3>Quick Facts</h3>
+        <div class="info-row"><span class="k">Location</span><span class="v">Bangalore, Karnataka</span></div>
+        <div class="info-row"><span class="k">Role</span><span class="v">SEO Analyst</span></div>
+        <div class="info-row"><span class="k">Company</span><span class="v">BankBazaar</span></div>
+        <div class="info-row"><span class="k">Education</span><span class="v">B.Tech CSE, JNTUA</span></div>
+        <div class="info-row"><span class="k">Languages</span><span class="v">English, Telugu, Kannada</span></div>
+        <div class="info-row"><span class="k">Status</span><span class="v hot">Open to Opportunities</span></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-N8N
-SEO Ops
-View repository
-AI Tooling · Claude
-On-Page SEO Automation ↗
-Sanitized showcase of Claude AI-assisted content evaluation and on-page SEO workflows.
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Skills &amp; Expertise</div>
+      <h2>What I bring to the <em>table</em>.</h2>
+      <p>A toolkit built across four years of computer science training and hands-on SEO work — from Python full-stack to crawl budget optimisation.</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="icon">⚡</div>
+        <h3>SEO Expertise</h3>
+        <p style="color:var(--muted);font-size:.95rem">On-page, off-page, and technical SEO — with a focus on getting search engines to understand sites better.</p>
+        <div class="tags">
+          <span class="tag">On-Page SEO</span>
+          <span class="tag">Off-Page SEO</span>
+          <span class="tag">Keyword Research</span>
+          <span class="tag">Content Optimisation</span>
+          <span class="tag">Link Building</span>
+          <span class="tag">Crawl Budget</span>
+          <span class="tag">Technical Audits</span>
+          <span class="tag">Schema Markup</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="icon">🤖</div>
+        <h3>AI &amp; Automation</h3>
+        <p style="color:var(--muted);font-size:.95rem">Replacing manual SEO ops with workflows and tools that compound time savings.</p>
+        <div class="tags">
+          <span class="tag">Claude AI Integration</span>
+          <span class="tag">N8N Workflows</span>
+          <span class="tag">AI-Assisted Content Ops</span>
+          <span class="tag">Internal Tool Dev</span>
+          <span class="tag">Workflow Automation</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="icon">💻</div>
+        <h3>Technical</h3>
+        <p style="color:var(--muted);font-size:.95rem">A computer science foundation that lets me read, write, and ship the code behind SEO tools.</p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Python Full-Stack</span>
+          <span class="tag">HTML</span>
+          <span class="tag">Vulnerability Testing</span>
+          <span class="tag">Machine Learning</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="icon">📊</div>
+        <h3>Tools &amp; Analytics</h3>
+        <p style="color:var(--muted);font-size:.95rem">The platforms I use daily to track, audit, and act on search performance.</p>
+        <div class="tags">
+          <span class="tag">Google Analytics</span>
+          <span class="tag">Search Console</span>
+          <span class="tag">SEMrush</span>
+          <span class="tag">Ahrefs</span>
+          <span class="tag">Nessus</span>
+          <span class="tag">Wireshark</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-Claude AI
-EEAT
-View repository
-Machine Learning · Python
-Customer Segmentation ↗
-Mini-Batch KMeans project for identifying actionable customer behaviour segments.
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Work Experience</div>
+      <h2>Where I've <em>built</em> things.</h2>
+      <p>Driving organic growth and operational efficiency through SEO and AI-led automation.</p>
+    </div>
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <div class="tl-card">
+          <div class="when">Mar 2025 — Present</div>
+          <h3>SEO Analyst</h3>
+          <div class="company">BankBazaar · Bangalore</div>
+          <ul>
+            <li>Conduct keyword research, competitor analysis, and on-page optimisation to improve organic rankings.</li>
+            <li>Developed in-house tools to streamline SEO reporting and cut analysis time significantly.</li>
+            <li>Built an N8N automation workflow for backlink disavow processing — reducing manual effort dramatically.</li>
+            <li>Created 2 internal automation tools leveraging Claude AI to assist with content and SEO operations.</li>
+            <li>Collaborated with content and dev teams to implement SEO-friendly site structures.</li>
+            <li>Monitored analytics via Google Analytics &amp; Search Console to track KPIs and improve traffic.</li>
+            <li>Improved site visibility through technical SEO — HTML optimisation, schema markup, and site audits.</li>
+            <li>Worked on crawl budget optimisation — disabling unnecessary URLs and pruning excess pages to sharpen Google's understanding of the site.</li>
+            <li>Actively learning and implementing AI-powered automation tools to push SEO operations further.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-card">
+          <div class="when">Internship</div>
+          <h3>Python Full-Stack Intern</h3>
+          <div class="company">Brain O Vision</div>
+          <ul>
+            <li>Hands-on training in Python full-stack development, building end-to-end web applications.</li>
+            <li>Strengthened practical skills across backend logic, database integration, and front-end implementation.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-Python
-KMeans
-View repository
-Cybersecurity · Defensive
-Security Associate Project ↗
-Defensive project showcase covering vulnerability assessment, hardening, and security review practices.
+<!-- PROJECTS / WORK -->
+<section id="projects">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">My Work</div>
+      <h2>Selected <em>projects</em>.</h2>
+      <p>A mix of professional automation builds and academic projects that shaped how I think about technical problems.</p>
+    </div>
+    <div class="projects-grid">
+      <div class="project reveal">
+        <div class="pkind">Automation · Professional</div>
+        <h3>N8N Backlink Disavow Workflow</h3>
+        <p>Designed and built an end-to-end automation pipeline that handles backlink disavow processing — turning a multi-hour manual task into a hands-off workflow. Substantially reduced effort and turnaround time for the SEO team.</p>
+        <div class="meta">
+          <span class="tag">N8N</span>
+          <span class="tag">Workflow Automation</span>
+          <span class="tag">SEO Ops</span>
+        </div>
+      </div>
+      <div class="project reveal">
+        <div class="pkind">AI Tooling · Professional</div>
+        <h3>Claude AI Internal Tools</h3>
+        <p>Built two internal automation tools leveraging Claude AI to assist with content operations and SEO tasks — embedding AI assistance directly into the team's daily workflow to compound time savings.</p>
+        <div class="meta">
+          <span class="tag">Claude AI</span>
+          <span class="tag">Internal Tools</span>
+          <span class="tag">Content Ops</span>
+        </div>
+      </div>
+      <div class="project reveal">
+        <div class="pkind">Machine Learning · Academic</div>
+        <h3>Customer Segmentation with Unsupervised ML</h3>
+        <p>End-to-end clustering pipeline using Mini-Batch K-Means. Cleaned and feature-engineered customer data, then segmented users into actionable groups like high-value shoppers and bargain hunters — improving marketing efficiency and inventory targeting.</p>
+        <div class="meta">
+          <span class="tag">Python</span>
+          <span class="tag">K-Means</span>
+          <span class="tag">Unsupervised ML</span>
+          <span class="tag">Data Cleaning</span>
+        </div>
+      </div>
+      <div class="project reveal">
+        <div class="pkind">Cybersecurity · Internship</div>
+        <h3>Cyber Security Associate Project</h3>
+        <p>Audited systems for vulnerabilities, applied hardening rules, remediated issues, and ran online-safety training. Improved system safety by 30% and delivered a faster security plan with added protective layers.</p>
+        <div class="meta">
+          <span class="tag">Nessus</span>
+          <span class="tag">Wireshark</span>
+          <span class="tag">Vulnerability Testing</span>
+          <span class="tag">Hardening</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-Nessus
-Wireshark
-View repository
-AEO/GEO · In Progress
-AI Visibility Tracker ↗
-Airtable-based tracker for monitoring brand mentions and citations in AI assistant responses to finance-related queries.
 
-Airtable
-AEO
-GEO
-View repository
-SEO Analysis · Python
-Duplicate & Thin Content Detector ↗
-Desktop tool for deterministic duplicate detection, thin-content flagging, and explainable Excel reporting.
+<!-- GITHUB -->
+<section id="github">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Open Source &amp; Code</div>
+      <h2>Find me on <em>GitHub</em>.</h2>
+      <p>Explore project showcases, experiments, and portfolio work on GitHub.</p>
+    </div>
+    <div class="projects-grid">
+      <a class="project reveal" href="https://github.com/ARcodes-hub/n8n-backlink-disavow-automation" target="_blank" rel="noopener"><div class="pkind">Automation · N8N</div><h3>Backlink Disavow Automation ↗</h3><p>Sanitized showcase of an automated backlink review and disavow-file preparation workflow.</p><div class="meta"><span class="tag">N8N</span><span class="tag">SEO Ops</span><span class="tag">View repository</span></div></a>
+      <a class="project reveal" href="https://github.com/ARcodes-hub/claude-ai-on-page-seo-automation" target="_blank" rel="noopener"><div class="pkind">AI Tooling · Claude</div><h3>On-Page SEO Automation ↗</h3><p>Sanitized showcase of Claude AI-assisted content evaluation and on-page SEO workflows.</p><div class="meta"><span class="tag">Claude AI</span><span class="tag">EEAT</span><span class="tag">View repository</span></div></a>
+      <a class="project reveal" href="https://github.com/ARcodes-hub/customer-segmentation-ml" target="_blank" rel="noopener"><div class="pkind">Machine Learning · Python</div><h3>Customer Segmentation ↗</h3><p>Mini-Batch KMeans project for identifying actionable customer behaviour segments.</p><div class="meta"><span class="tag">Python</span><span class="tag">KMeans</span><span class="tag">View repository</span></div></a>
+      <a class="project reveal" href="https://github.com/ARcodes-hub/cyber-security-associate-project" target="_blank" rel="noopener"><div class="pkind">Cybersecurity · Defensive</div><h3>Security Associate Project ↗</h3><p>Defensive project showcase covering vulnerability assessment, hardening, and security review practices.</p><div class="meta"><span class="tag">Nessus</span><span class="tag">Wireshark</span><span class="tag">View repository</span></div></a>
+      <a class="project reveal" href="https://github.com/ARcodes-hub/ai-visibility-tracker" target="_blank" rel="noopener"><div class="pkind">AEO/GEO · In Progress</div><h3>AI Visibility Tracker ↗</h3><p>Airtable-based tracker for monitoring brand mentions and citations in AI assistant responses to finance-related queries.</p><div class="meta"><span class="tag">Airtable</span><span class="tag">AEO</span><span class="tag">GEO</span><span class="tag">View repository</span></div></a>
+    </div>
+    <div class="cta-row" style="margin-top:28px"><a href="https://github.com/ARcodes-hub" class="btn btn-ghost" target="_blank" rel="noopener">View GitHub profile →</a></div>
+  </div>
+</section>
 
-Python
-TF-IDF
-View repository
-View GitHub profile →
-Education
-Academic foundation.
-2024
-B.Tech, Computer Science & Engineering
-Rajeev Gandhi Memorial College of Engineering & Technology, Nandyal · JNTUA
-CGPA 7.0
-2020
-Intermediate (MPC)
-C V Raman Junior College, Anantapur · Board of Intermediate Education
-CGPA 7.0
-2018
-SSC
-Matha English Medium High School, Madakasira · Board of Secondary Education
-CGPA 9.0
-Certifications & Achievements
-What I've earned along the way.
-🛡
-Cyber Security Certification
-EDUSKILLS
+<!-- EDUCATION -->
+<section id="education">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Education</div>
+      <h2>Academic <em>foundation</em>.</h2>
+    </div>
+    <div class="edu-grid">
+      <div class="edu-card reveal">
+        <div class="year">2024</div>
+        <h4>B.Tech, Computer Science &amp; Engineering</h4>
+        <div class="school">Rajeev Gandhi Memorial College of Engineering &amp; Technology, Nandyal · JNTUA</div>
+        <span class="grade">CGPA 7.0</span>
+      </div>
+      <div class="edu-card reveal">
+        <div class="year">2020</div>
+        <h4>Intermediate (MPC)</h4>
+        <div class="school">C V Raman Junior College, Anantapur · Board of Intermediate Education</div>
+        <span class="grade">CGPA 7.0</span>
+      </div>
+      <div class="edu-card reveal">
+        <div class="year">2018</div>
+        <h4>SSC</h4>
+        <div class="school">Matha English Medium High School, Madakasira · Board of Secondary Education</div>
+        <span class="grade">CGPA 9.0</span>
+      </div>
+    </div>
+  </div>
+</section>
 
-🌐
-IoT & Soft Skills Certification
-NPTEL
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Certifications &amp; Achievements</div>
+      <h2>What I've <em>earned</em> along the way.</h2>
+    </div>
+    <div class="ach-grid">
+      <div class="ach reveal"><div class="ico">🛡</div><div><h4>Cyber Security Certification</h4><p>EDUSKILLS</p></div></div>
+      <div class="ach reveal"><div class="ico">🌐</div><div><h4>IoT &amp; Soft Skills Certification</h4><p>NPTEL</p></div></div>
+      <div class="ach reveal"><div class="ico">🐍</div><div><h4>Python Full-Stack Internship</h4><p>Brain O Vision</p></div></div>
+      <div class="ach reveal"><div class="ico">💃</div><div><h4>Classical Dance</h4><p>Long-time extracurricular practice</p></div></div>
+    </div>
+  </div>
+</section>
 
-🐍
-Python Full-Stack Internship
-Brain O Vision
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-card reveal">
+      <h2>Let's build something <em>together</em>.</h2>
+      <p>I'm open to opportunities in SEO, AI automation, and technical roles where engineering meets growth. Drop a message — I'd love to hear from you.</p>
+      <div class="contact-row">
+        <a href="mailto:Aishwaryaramesh180@gmail.com" class="btn btn-primary">✉ Aishwaryaramesh180@gmail.com</a>
+        <a href="tel:+917676387344" class="btn btn-ghost">📞 +91 76763 87344</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-💃
-Classical Dance
-Long-time extracurricular practice
+<footer>
+  <div class="container">
+    Designed &amp; built for <span class="accent">Aishwarya Ramesh</span> · SEO Analyst &amp; AI Automation Specialist · 2026
+  </div>
+</footer>
 
-Let's build something together.
-I'm open to opportunities in SEO, AI automation, and technical roles where engineering meets growth. Drop a message — I'd love to hear from you.
+<script>
+  // Intersection observer for reveal-on-scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-✉ Aishwaryaramesh180@gmail.com
-📞 +91 76763 87344
-Designed & built for Aishwarya Ramesh · SEO Analyst & AI Automation Specialist · 2026
+  // Close mobile menu on link click
+  document.querySelectorAll('#primary-nav a').forEach(a => {
+    a.addEventListener('click', () => document.getElementById('primary-nav').classList.remove('open'));
+  });
+</script>
+
+</body>
+</html>
